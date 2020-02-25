@@ -6,15 +6,15 @@
             "value": "westeurope"
         },
         "networkInterfaceName": {
-            "value": "domanvm820"
+            "value": "domanvm311"
         },
         "networkSecurityGroupName": {
-            "value": "domanVM-nsg"
+            "value": "DomanVM-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
                 {
-                    "name": "SSH",
+                    "name": "RDP",
                     "properties": {
                         "priority": 300,
                         "protocol": "TCP",
@@ -23,7 +23,7 @@
                         "sourceAddressPrefix": "*",
                         "sourcePortRange": "*",
                         "destinationAddressPrefix": "*",
-                        "destinationPortRange": "22"
+                        "destinationPortRange": "3389"
                     }
                 },
                 {
@@ -76,7 +76,7 @@
             ]
         },
         "publicIpAddressName": {
-            "value": "domanVM-ip"
+            "value": "DomanVM-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -85,7 +85,7 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "domanVM"
+            "value": "DomanVM"
         },
         "virtualMachineRG": {
             "value": "Domanskiy1"
@@ -101,7 +101,7 @@
                     "caching": "None",
                     "writeAcceleratorEnabled": false,
                     "id": null,
-                    "name": "domanVM_DataDisk_0",
+                    "name": "DomanVM_DataDisk_0",
                     "storageAccountType": null,
                     "diskSizeGB": null,
                     "diskEncryptionSet": {
@@ -113,10 +113,10 @@
         "dataDiskResources": {
             "value": [
                 {
-                    "name": "domanVM_DataDisk_0",
-                    "sku": "Premium_LRS",
+                    "name": "DomanVM_DataDisk_0",
+                    "sku": "StandardSSD_LRS",
                     "properties": {
-                        "diskSizeGB": 32,
+                        "diskSizeGB": 64,
                         "creationData": {
                             "createOption": "empty"
                         }
@@ -136,7 +136,7 @@
                 "id": "/subscriptions/b539cf9f-8e27-4473-8abf-a2b4516215e3/resourcegroups/Domanskiy1/providers/Microsoft.KeyVault/vaults/DomanskiyKey"
                 },
                 "secretName": "vmAdminPassword"
-            }
+            }              
         },
         "diagnosticsStorageAccountName": {
             "value": "domanskiy1diag"
