@@ -131,7 +131,12 @@
             "value": "doman"
         },
         "adminPassword": {
-            "value": null
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/<SubscriptionID>/resourceGroups/mykeyvaultdeploymentrg/providers/Microsoft.KeyVault/vaults/<KeyVaultName>"
+                },
+                "secretName": "vmAdminPassword"
+            }
         },
         "diagnosticsStorageAccountName": {
             "value": "domanskiy1diag"
