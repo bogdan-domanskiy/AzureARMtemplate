@@ -135,7 +135,7 @@
                 "keyVault": {
                 "id": "/subscriptions/b539cf9f-8e27-4473-8abf-a2b4516215e3/resourcegroups/Domanskiy1/providers/Microsoft.KeyVault/vaults/DomanskiyKey"
                 },
-                "secretName": "vmAdminPassword"
+                "secretName": "vmAdminPass"
             }              
         },
         "diagnosticsStorageAccountName": {
