@@ -38,18 +38,18 @@
                         "destinationAddressPrefix": "*",
                         "destinationPortRange": "443"
                     }
-                },
+                },           
                 {
-                    "name": "SSH",
+                    "name": "winRM",
                     "properties": {
-                        "priority": 340,
+                        "priority": 100,
                         "protocol": "TCP",
                         "access": "Allow",
                         "direction": "Inbound",
                         "sourceAddressPrefix": "*",
                         "sourcePortRange": "*",
                         "destinationAddressPrefix": "*",
-                        "destinationPortRange": "22"
+                        "destinationPortRange": "5985-5986"
                     }
                 },
                 {
