@@ -40,16 +40,29 @@
                     }
                 },
                 {
-                    "name": "SSH",
+                    "name": "HTTPS",
                     "properties": {
-                        "priority": 340,
+                        "priority": 320,
                         "protocol": "TCP",
                         "access": "Allow",
                         "direction": "Inbound",
                         "sourceAddressPrefix": "*",
                         "sourcePortRange": "*",
                         "destinationAddressPrefix": "*",
-                        "destinationPortRange": "22"
+                        "destinationPortRange": "443"
+                    }
+                },                
+                {
+                    "name": "winRM",
+                    "properties": {
+                        "priority": 100,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "5985-5986"
                     }
                 },
                 {
