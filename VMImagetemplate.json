@@ -38,20 +38,7 @@
                         "destinationAddressPrefix": "*",
                         "destinationPortRange": "443"
                     }
-                },
-                {
-                    "name": "HTTPS",
-                    "properties": {
-                        "priority": 320,
-                        "protocol": "TCP",
-                        "access": "Allow",
-                        "direction": "Inbound",
-                        "sourceAddressPrefix": "*",
-                        "sourcePortRange": "*",
-                        "destinationAddressPrefix": "*",
-                        "destinationPortRange": "443"
-                    }
-                },                
+                },           
                 {
                     "name": "winRM",
                     "properties": {
