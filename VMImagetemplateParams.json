@@ -1,4 +1,4 @@
-  {
+{
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
@@ -6,7 +6,7 @@
             "value": "westeurope"
         },
         "networkInterfaceName": {
-            "value": "domanimagevm169"
+            "value": "domanimagevm971"
         },
         "networkSecurityGroupName": {
             "value": "DomanImageVM-nsg"
@@ -104,33 +104,6 @@
                     "diskSizeGB": null,
                     "diskEncryptionSet": {
                         "id": null
-                    }
-                },
-                {
-                    "lun": 1,
-                    "createOption": "attach",
-                    "caching": "None",
-                    "writeAcceleratorEnabled": false,
-                    "id": null,
-                    "name": "DomanImageVM_DataDisk_1",
-                    "storageAccountType": null,
-                    "diskSizeGB": null,
-                    "diskEncryptionSet": {
-                        "id": null
-                    }
-                }
-            ]
-        },
-        "dataDiskResources": {
-            "value": [
-                {
-                    "name": "DomanImageVM_DataDisk_1",
-                    "sku": "Premium_LRS",
-                    "properties": {
-                        "diskSizeGB": 32,
-                        "creationData": {
-                            "createOption": "empty"
-                        }
                     }
                 }
             ]
